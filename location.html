@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search city page</title>
+    <style>
+        body {
+            font-family: 'Shippori Mincho B1', serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .form-group button {
+            background: #333;
+            color: #000;
+            border: 0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container{
+            font-size: large;
+        }
+        .header{
+    min-height: 100vh;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffb300;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <dive>
+        <section class="header">
+            <nav>
+             <a href="index.html"><img src="logo2.png"></a>
+             <div class="nav-links" id="navlinks">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+     
+                 <ul>
+                     <li><a = href="index.html">HOME</a></li>
+                     <li><a = href="about.html">ABOUT</a></li>
+                     <li><a = href="contactus.html">CONTACT US</a></li>
+                     <li><a = href="login.html">LOGIN/SIGN UP</a></li>
+                 </ul>
+     
+             </div>
+             <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav> 
+         
+        </dive>
+    <div class="container">
+        <h2>Search for city</h2>
+        <form>
+            <div class="form-group">
+                <label for="Location">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter a city">
+            </div>
+            <!-- <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div> -->
+            <button type="Search">Search</button>
+        </form>
+        <pre>
+            <h1>OR</h1>
+            <p>Use Current Location<a href="#"><br><br>Use</a></p>
+        </pre>
+        
+    </div>
+</body>
+</html>
