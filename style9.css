@@ -175,3 +175,14 @@ h3{
 div img{
     width: 120px;
 }
+#trains {
+    width: 50px;
+    padding-right: 200px;
+    /* background-color: blue; */
+}
+
+#airports {
+    width: 50px;
+    padding-left: 200px;
+    /* background-color: blue; */
+}
