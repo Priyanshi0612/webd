@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="index.html"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="index.html">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><a = href="login.html">LOGIN/SIGN UP</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+                <!--<p>A guide for must visit places</p>-->
+            </pre>
+            </div>
+        
+        <!-----Popular City Menu----->
+        
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+        
+            <div class = "row">
+                <div class="city-col">
+                    <img src="amer.jpg">
+                    <h3>AMER FORT</h3>
+                    <p> Cradled on the top of a hill near Jaipur lies the Amer Fort, one of the most magnificent palaces in India. Also commonly known as the Amber Fort, this majestic building with its maze-like passagesers.     </p>
+                    </div>
+               <div class="city-col">
+                   <img src="jantarmantar.jpg">
+                  <h3>JANTAR MANTAR JAIPUR</h3>
+                   <p> Located near the City Palace in the regal city of Jaipur, Jantar Mantar is the largest stone astronomical observatory in the world. Owing to its rich cultural, heritage and scientific value, Jantar Mantar in Jaipur has also been featured on UNESCO's list of World Heritage Sites </p>
+               </div>
+               <div class="city-col">
+                   <img src="hawa.jpg">
+                   <h3>HAWA MAHAL</h3>
+                   <p> The massive edifice of Hawa Mahal stands at the intersection of the main road in Jaipur, Badi Chaupad and was built by Maharaja Sawai Pratap Singh in the year 1799. Hawa Mahal derives its name from its unique structure .</p> 
+               </div>
+           </div>
+        
+           <div class="row2">
+               <div class="city-colu">
+                   <img src="citypalace.jpg">
+                  <h3>CITY  PALACE</h3>
+                    <p>The magnificent City Palace in Jaipur is one of the most famous tourist attractions located in the old part of the city. Built by Maharaja Sawai Jai Singh during the years 1729 to 1732, the vast complex of the palace occupied one-seventh of the walled city</p>
+                    </div>
+               <div class="city-colu">
+                   <img src="albert.jpg">
+                   <h3>ALBERT HALL MUSEUM</h3>
+                   <p>Situated in the Ram Niwas Garden of Jaipur, the Albert Hall Museum is the oldest museum in Rajasthan. Built in 1876, it was initially envisioned to be a concert hall and resembles the architecture of the Victoria and Albert Hall Museum in London, hence, the name. </p>
+               </div>
+               <div class="city-colu">
+                   <img src="planmytrip.png"><h3>Plan My Trip</h3>
+                   <a href=""><img src="" alt="train" id="trains"></a>
+                   <a href=""><img src="" alt="airport" id="airports"></a>
+               </div>
+               
+           </div>
+         
+        
+        </div>
+        
+        </div>
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+        </body>
+        </html>
