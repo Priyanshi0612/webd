@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="index.html"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="index.html">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><a = href="login.html">LOGIN/SIGN UP</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+                <!--<p>A guide for must visit places</p>-->
+            </pre>
+            </div>
+        
+        <!-----Popular City Menu----->
+        
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+        
+            <div class = "row">
+                <div class="city-col">
+                    <a href="https://www.tripadvisor.in/Attraction_Review-g304554-d321437-Reviews-Marine_Drive-Mumbai_Maharashtra.html"><img src="marine.jpg"></a>
+                    <h3>Marine Drive</h3>
+                    <p>Bordering the Arabian Sea, this famous road is a popular spot for watching sunsets, and is gorgeous when lit up at night.</p>
+                    </div>
+               <div class="city-col">
+                   <a href="https://www.tripadvisor.in/Attraction_Review-g304554-d311667-Reviews-Gateway_of_India-Mumbai_Maharashtra.html"><img src="gate.jpg"></a>
+                  <h3>Gateway of India</h3>
+                   <p>Built in 1911 to welcome the King and Queen of England, this stone archway in Colaba is now a historic landmark.</p>
+               </div>
+               <div class="city-col">
+                   <a href="https://www.tripadvisor.in/Attraction_Review-g304554-d622586-Reviews-Shree_Siddhivinayak-Mumbai_Maharashtra.html"><img src="siddhivinayak.jpg"></a>
+                   <h3>Shree Siddhivinayak</h3>
+                   <p>This temple is the most revered Lord Ganesh temple not only of Maharashtra but also of India. </p> 
+               </div>
+           </div>
+        
+           <div class="row2">
+               <div class="city-colu">
+                   <a href="https://www.tripadvisor.in/Attraction_Review-g304554-d2704519-Reviews-Bandra_Worli_Sea_Link-Mumbai_Maharashtra.html"><img src="bandra.jpg"></a>
+                  <h3>Bandra-Worli Sea Link</h3>
+                    <p>This is a bridge which links Mumbai’s suburbs to South Mumbai. It’s a very prestigious bridge which was opened in 2009.</p>
+                    </div>
+               <div class="city-colu">
+                   <a href="https://www.tripadvisor.in/Attraction_Review-g304554-d321412-Reviews-Chhatrapati_Shivaji_Terminus-Mumbai_Maharashtra.html"><img src="terminus.jpg"></a>
+                   <h3>Chhatrapati Shivaji Terminus</h3>
+                   <p>India's most beautiful railway station is a masterpiece of Gothic architecture with stained-glass windows, towering spires, domed arches and buttresses and pillars with animal images carved into them. </p>
+               </div>
+               <div class="city-colu">
+                   <img src="planmytrip.png"><h3>Plan My Trip</h3>
+                   <a href="mumbai-rail-map.html"><img src="https://imgs.search.brave.com/yNkE_kZQ-DZ2hFzCfErTCATOI0sftC1OgTo9z_ltL_I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMTEvSW5kaWFu/X1JhaWx3YXlfTG9n/b18yLTcwMHg3MDAu/cG5n" alt="train" id="trains"></a>
+                   <a href="mumbai-air-map.html"><img src="https://imgs.search.brave.com/ZYJq-uXOYtTQuTnM5YEwuDV4krFtnfh2yrkZqXBBO_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/NDE2MDgwOS92ZWN0/b3IvYWlycGxhbmUt/aWNvbi1wbGFuZS1m/bGlnaHQtcGljdG9n/cmFtLXRyYW5zcG9y/dC1zeW1ib2wtdHJh/dmVsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1CdGdKVlcx/UlE5YTRpOHNUTW0t/VWstSEFGSTJzTmJE/RlFWdkhiUEtiUUE0/PQ" alt="airport" id="airports"></a>
+               </div>
+               
+           </div>
+         
+        
+        </div>
+        
+        </div>
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+        </body>
+        </html>
