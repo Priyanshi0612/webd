@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box with Dropdown</title>
+</head>
+<body>
+    <form id="myForm" method="get">
+        <label for="inputField">Choose an option:</label>
+        <select id="inputField" name="option">
+            <option value="webp1.html">Option 1</option>
+            <option value="/whateverinput2">Option 2</option>
+            <option value="/whateverinput3">Option 3</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            var selectedOption = document.getElementById('inputField').value;
+            this.action = selectedOption;
+        });
+    </script>
+</body>
+</html>

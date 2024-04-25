@@ -60,9 +60,6 @@
 
 </head>
 <body>
-
-    <body>
-    <a href="http://127.0.0.1:5501/index.html"><img src="http://127.0.0.1:5501/logo2.png" id="logo"></a>
     <div class="container">
         <h2>Login</h2>
         <form action="/login" method="post" >
@@ -78,6 +75,18 @@
         </form>
         <p>Don't have an account? <a href="/signup">Sign up</a></p>
     </div>
-</body>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    animateContainer();
+                });
+
+                function animateContainer() {
+                    $(".container").css('top', '10%'); 
+                    $(".container").animate({'top': '50%'}, 1500);
+                }
+            </script>
+
 </body>
 </html>

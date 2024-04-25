@@ -5,14 +5,22 @@
     <style>
         body {
             font-family: 'Shippori Mincho B1', serif;
-            background-color: #f4f4f4;
+            background-image: url('https://imgs.search.brave.com/Hw-QVP-dV4oNJqbPaiFgj1ZIwfVIwNg3zWpBu_qKmc0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtYmxvZy50cmVl/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE4LzA4L0Rh/cmplZWxpbmcuanBn');
+            background-repeat: no-repeat;
+            background-size: 100% 950px;
         }
         .container {
-            max-width: 400px;
+            position: fixed;
+            top: -100%;
+            left: 40%;
+            width: 500px;
             margin: 0 auto;
             padding: 20px;
             background: #fff;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: top 0.5s;
+            height: 450px
         }
         .form-group {
             margin-bottom: 20px;
@@ -20,12 +28,6 @@
         .form-group label {
             display: block;
             font-weight: bold;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #000;
-            border-radius: 5px;
         }
         .form-group button {
             background: #333;
@@ -65,6 +67,10 @@ nav img{
     color: #000;
     text-decoration: none;
     font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
 }
 .nav-links ul li::after{
     content: '';
@@ -78,46 +84,66 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-    </style>
+input{
+    width: 500px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+    </style> 
 </head>
 <body>
-    <dive>
+    <div>
         <section class="header">
             <nav>
-             <a href="index.html"><img src="logo2.png"></a>
-             <div class="nav-links" id="navlinks">
-                 <i class="fa fa-times" onclick="hideMenu()"></i>
-     
-                 <ul>
-                     <li><a = href="index.html">HOME</a></li>
-                     <li><a = href="about.html">ABOUT</a></li>
-                     <li><a = href="contactus.html">CONTACT US</a></li>
-                     <li><a = href="/login">LOGIN/SIGN UP</a></li>
-                 </ul>
-     
-             </div>
+             <a href="/home"><img src="logo2.png"></a>
              <i class="fa fa-bars" onclick="showmenu()"></i>
             </nav> 
          
-        </dive>
+        </section>
+    </div>
     <div class="container">
-        <h2>Search for city</h2>
-        <form>
-            <div class="form-group">
-                <label for="Location">City:</label>
-                <input type="text" id="city" name="city" placeholder="Enter a city">
+        <form id="myForm" method="get">
+        <div class="form-group">
+                <label for="inputField"><h2>Search for city</h2></label>
+                <br><br><br>
+                <select id="inputField" name="option" style="width: 300px; height: 30px;">
+                <option value="default">Select an option</option>  
+                <option value="delhi.html">Delhi</option>
+                <option value="hyderabad.html">Hyderabad</option>
+                <option value="kolkata.html">Kolkata</option>
+                <option value="amritsar.html">Amritsar</option>
+                <option value="mumbai.html">Mumbai</option>
+                <option value="jaipur.html">Jaipur</option>
+        </select>
             </div>
-            <!-- <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
-            </div> -->
-            <button type="Search">Search</button>
+            <br><br><br><br><br>
+            <button type="submit">Search</button>
         </form>
-        <pre>
-            <h1>OR</h1>
-            <p>Use Current Location<a href="#"><br><br>Use</a></p>
-        </pre>
         
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        animateContainer();
+    });
+
+    function animateContainer() {
+        $(".container").css('top', '50%'); 
+        $(".container").animate({'top': '30%'}, 1500);
+    }
+</script>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        var searched = document.getElementById('inputField').value;
+        if(searched=="default")
+        alert("Please select an option")
+        else
+        this.action = searched;
+    });
+</script>
+
 </body>
 </html>

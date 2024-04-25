@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url('https://imgs.search.brave.com/jiuBCkbBvrsMkSktbw8_-yiVgDC_0o7un7OqOyKiPLs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/Nzk1OTEyL3Bob3Rv/L2luZGlhLWdhdGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWtaa2RyRURYRXRv/TEs2UWg4WFB5d2M5/VllWOTVtSlhYY1dM/QnhIZnROX1U9');
+            background-image: url('https://imgs.search.brave.com/JmIc1LaEGBz7I6C67e2vieR2Uaw_ZUK5-t8IEAxfxAM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9scC1j/bXMtcHJvZHVjdGlv/bi5pbWdpeC5uZXQv/MjAxOS0wNi8yODMz/ODkuanBnP2F1dG89/Zm9ybWF0JmZpdD1j/cm9wJmFyPTE6MSZx/PTc1Jnc9MTIwMA');
             margin: 0;
             display: flex;
             justify-content: center;
@@ -57,24 +57,27 @@
         }
         
     </style>
+
 </head>
 <body>
+
     <div class="container">
-        <h2>Sign Up</h2>
-        <form action="/signup" method="post" >
+        <h2>Login</h2>
+        <form action="/" method="post" >
             <div class="form-group">
-                <label for="name">Username:</label>
-                <input placeholder="Name" name="name" type="text" required>
+                <label for="username">Username:</label>
+                <input name="name" type="text" placeholder="Enter your username">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input placeholder="Password" type="password" id="password" name="password" required>
+                <input placeholder="Password" name="password" type="password">
             </div>
-            <button type="submit">Sign Up</button>
+            <button type="submit">Login</button>
         </form>
-        <p>Already have an account? <a href="/">Login</a></p>
+        <p>Don't have an account? <a href="/signup">Sign up</a></p>
     </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
                 $(document).ready(function(){
                     animateContainer();
