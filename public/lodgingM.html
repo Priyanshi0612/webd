@@ -1,101 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourism Website design</title>
-    <link rel="stylesheet" href="style8.css">
+    <link rel="stylesheet" href="places3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-
 </head>
 <body>
     <div>
     <section class="header">
        <nav>
-        <a href="index.html"><img src="logo2.png"></a>
+        <a href="/home"><img src="logo2.png"></a>
         <div class="nav-links" id="navlinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
-
             <ul>
-                <li><a = href="index.html">HOME</a></li>
-                <li><a = href="about.html">ABOUT</a></li>
-                <li><a = href="contactus.html">CONTACT US</a></li>
-                <li><a = href="/login">LOGIN/SIGN UP</a></li>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="/">LOGIN/SIGN UP</a></li>
             </ul>
-
         </div>
-        <i class="fa fa-bars" onclick="showmenu()"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
        </nav> 
     </div>
     <div>
         <pre>
             <div class="text-box">
-                <h1>LODGING</h1>
+                <h1>Lodgings</h1>
                 <p>Sensible living spaces that offer you an optimal quality stay at the best price</p>
             </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Oberoi.jpg" alt="">
             </div>
-        
-        <!-----Popular City Menu----->
-        
-        <div class="cities">
-            <!-- <h1>Popular Cities</h1>
-            <p>Some of India's most frequently visited cities</p> -->
-        
-            <div class = "row">
-                <div class="city-col">
-                    <a href="https://www.makemytrip.com/hotels/mumbai-hotels.html"><img src="hotel.png"></a>
-                    <h3>Hotels</h3>
-                    <p>Find everything from 5 star hotels to sensible inns</p>
-                    </div>
-               <div class="city-col">
-                   <a href="https://www.airbnb.co.in/s/Mumbai--India/homes?adults=1&place_id=ChIJwe1EZjDG5zsRaYxkjY_tpF0&refinement_paths%5B%5D=%2Fhomes"><img src="airbnb.png"></a>
-                   <h3>AirBnB</h3>
-                   <p>For your short term stays</p>
-               </div>
-               <div class="city-col">
-                   <a href="https://yatradham.org/yatradham-destinations/maharashtra/mumbai.html"><img src="dharamshala.png"></a>
-                   <h3>Dharamshalas
-                               </h3>
-                   <p>Affordable accommodation providing all basic amenities.</p> 
-               </div>
-           </div>
-        
-           <div class="row2">
-               <div class="city-colu">
-                   <a href="https://www.booking.com/searchresults.en-gb.html?ss=Mumbai&ssne=Mumbai&ssne_untouched=Mumbai&theme_id=4&efdco=1&label=gog235jc-1BCAMYiAQobEIGYm9tYmF5SDNYA2hsiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAK98KexBsACAdICJDlkNDRiNWNmLTMwNGEtNDNhYS04MWMyLWM3ZTM0YmI1MDVmYdgCBeACAQ&sid=fe2b4e1a41cba7efd79b853245471bc5&aid=356980&lang=en-gb&sb=1&src_elem=sb&src=city&dest_id=-2092174&dest_type=city&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&theme_id=4"><img src="hostel.png"></a>
-                   <h3>Hostel/PG</h3>
-                    <p>Smart living solutions for students</p>
-                    </div>
-               <div class="city-colu">
-                   <a href="https://housing.com/rent/single-room-for-rent-in-mumbai-maharashtra-C3Pskwz0ocdh7q42r5?gad_source=1&gclid=CjwKCAjw26KxBhBDEiwAu6KXt87GE-gXuJINT2sAyAqpLiMxP1VxgOr7WdVXk1xSHY6lXoz55tvZQRoCypEQAvD_BwE"><img src="rental.png"></a>
-                   <h3>Rooms for rent</h3>
-                   <p>For your long term stays</p>
-               </div>
-               <!-- <div class="city-colu">
-                   <img src="amritsar.png">
-                   <a href="webp6.html"><h3>Amritsar</h3></a>
-                   <p>...Telangana's Capital...<br>...description...</p> 
-               </div> -->
-               
-           </div>
-         
-        
+            <div class="content">
+                <h1>The Oberoi</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05092024&checkout=05132024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=200701160930105750&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=PREMIUM">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="taj.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Taj Mahal Tower</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05112024&checkout=05122024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=200901081433266594&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=LUXE">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="taj1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>The Taj Mahal Palace</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05112024&checkout=05132024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=201709071828297454&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=LUXE">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="naaz.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Naaz Executive</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05112024&checkout=05132024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=202101282016063985&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=BUDGET">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="trident.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Trident Nariman Point</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05112024&checkout=05132024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=200701171358504770&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=LUXE">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="itc.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>ITC Grand Central</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=05112024&checkout=05132024&locusId=CTBOM&locusType=city&city=CTBOM&country=IN&searchText=Mumbai&roomStayQualifier=2e0e&_uCurrency=INR&reference=hotel&hotelId=201310261601384953&rf=directSearch&type=hotel&rsc=1e2e0e&viewType=LUXE">Booking</a></button>
+            </div>
         </div>
         
-        </div>
-        
-        <!------JavaScript for Toggle Menu------>
-        <script>
-            var navlinks = document.getElementById("navlinks");
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-            function hideMenu(){
-                navlinks.style.right = "-200px";
-            }
-        </script>
-        
-        </body>
-        </html>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
